@@ -52,6 +52,7 @@ jobs:
           pip install -r requirements-test.txt
           pip install .
           pip install chromedriver_autoinstaller
+          pip install requests_html
       - name: "Run"
         run: |
-          python debug/test_selenium.py
+          python debug/test_requests_html.py
