@@ -15,23 +15,23 @@ jobs:
     name: Run
     runs-on: ubuntu-latest # for all available VM runtime, see this: https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners
 
-    container:
-      image: node:19
-
-    services:
-      selenium:
-        image: selenium/standalone-chrome
-        options: --shm-size=2gb
+#    container:
+#      image: node:19
+#
+#    services:
+#      selenium:
+#        image: selenium/standalone-chrome
+#        options: --shm-size=2gb
 
     steps:
       - uses: "actions/checkout@v3" # https://github.com/marketplace/actions/checkout
       - uses: "actions/setup-python@v4" # https://github.com/marketplace/actions/setup-python
         with:
           python-version: "${{ matrix.python-version }}"
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "19"
-          cache: "npm"
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: "19"
+#          cache: "npm"
 
       - name: "Install dependencies on MacOS or Linux"
         run: |

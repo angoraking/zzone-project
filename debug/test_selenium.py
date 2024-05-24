@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from selenium import webdriver
+import chromedriver_autoinstaller
+
+chromedriver_autoinstaller.install()
 
 # Create a new instance of the Chrome driver
 # I tried, the headless driver doesn't work
