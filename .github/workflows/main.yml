@@ -53,6 +53,7 @@ jobs:
           pip install .
           pip install chromedriver_autoinstaller
           pip install requests_html
+          pip install lxml_html_clean
       - name: "Run"
         run: |
           python debug/test_requests_html.py
