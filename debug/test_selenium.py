@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
+
 from selenium import webdriver
 
 # Create a new instance of the Chrome driver
+# I tried, the headless driver doesn't work
 driver = webdriver.Chrome()
 
 # Navigate to the website
