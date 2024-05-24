@@ -22,6 +22,8 @@ s3pathlib = "2.1.2"
 # HTTP requests
 requests = "2.32.2"
 urllib3 = "1.26.18"
+fake_useragent = "1.5.1"
+selenium = "4.21.0"
 # DynamoDB
 pynamodb = "6.0.0"
 pynamodb_mate = "6.0.0.1"

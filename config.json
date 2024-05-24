@@ -1,0 +1,4 @@
+{
+    "s3uri_data": "s3://bmt-app-dev-us-east-1-data/projects/zzone/",
+    "aws_profile": "bmt_app_dev_us_east_1"
+}
